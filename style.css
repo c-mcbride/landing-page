@@ -3,12 +3,12 @@
 }
 
 body{
-    min-height: 100vh; 
+    min-height: min-content; 
     display: flex; 
     flex-direction: column; 
-    flex-wrap: wrap;
     margin: 0;  
-    flex: auto; 
+    flex: 1; 
+
 }
 
 .header{
@@ -27,7 +27,7 @@ body{
     display: flex; 
     flex-direction: row; 
     justify-content: space-between; 
-    flex: auto;  
+    flex: 1; 
 }
 
 #rid{
@@ -53,7 +53,7 @@ a{
     background-color: #1f2937; 
     color: white; 
     display: flex; 
-    padding-top: 100px; 
+    padding-top: 50px; 
     justify-content: space-between; 
     padding-left: 12%; 
     padding-right: 12%; 
@@ -153,7 +153,8 @@ button {
 
 .quote-section{
     display: flex; 
-    flex-direction: column;
+    align-content: center; 
+    flex-direction: row;
     background-color: #e5e7eb;
     color: black; 
     height: 100px; 
@@ -161,6 +162,7 @@ button {
     padding-left: 200px;
     padding-right: 200px; 
     flex: auto; 
+    flex-wrap: wrap; 
 }
 
 .quote-text{
@@ -170,10 +172,19 @@ button {
 .quote-name{
     display: flex;
     font-weight: 900; 
-    padding-right: 50px; 
-    
     justify-content: flex-end; 
     flex: 1; 
+}
+
+.call-to-action{
+    display: flex;
+    align-items: center; 
+    background-color: white; 
+}
+
+.call-to-action-column{
+    display: flex; 
+    flex-direction: column;  
 }
 
 
