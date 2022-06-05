@@ -1,14 +1,13 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
-
 body{
-    min-height: min-content; 
+    min-height: 100vh; 
     display: flex; 
     flex-direction: column; 
+    flex-wrap: wrap;
     margin: 0;  
-    flex: 1; 
-
+    flex: auto; 
 }
 
 .header{
@@ -19,7 +18,7 @@ body{
     gap: 10px; 
     padding-top: 10px;
     padding-left: 12%; 
-    padding-right: 12%; 
+    padding-right: 12%;  
 }
 
 
@@ -27,7 +26,7 @@ body{
     display: flex; 
     flex-direction: row; 
     justify-content: space-between; 
-    flex: 1; 
+    flex: auto;  
 }
 
 #rid{
@@ -54,17 +53,17 @@ a{
     color: white; 
     display: flex; 
     padding-top: 50px; 
+    padding-bottom: 100px; 
     justify-content: space-between; 
     padding-left: 12%; 
     padding-right: 12%; 
     align-items: center; 
     flex: auto; 
-    height: 200px; 
+    
 }
 
 .site-intro-left{
     width: 400px; 
-    height: 400px; 
     display: flex;
     flex-direction: column;  
     flex-wrap: wrap;  
@@ -153,39 +152,91 @@ button {
 
 .quote-section{
     display: flex; 
-    align-content: center; 
-    flex-direction: row;
+    justify-content: center; 
+    flex-direction: column;
     background-color: #e5e7eb;
     color: black; 
     height: 100px; 
-    padding-top: 20px; 
+    padding-top: 100px; 
     padding-left: 200px;
     padding-right: 200px; 
-    flex: auto; 
-    flex-wrap: wrap; 
+    padding-bottom: 100px; 
+    flex: 1; 
 }
 
 .quote-text{
     font-size: 36px;  
+    align-self: center; 
 }
 
 .quote-name{
     display: flex;
     font-weight: 900; 
+    padding-right: 50px; 
     justify-content: flex-end; 
     flex: 1; 
 }
 
 .call-to-action{
     display: flex;
-    align-items: center; 
-    background-color: white; 
+    justify-content: center; 
+    align-items: center;  
+    height: 100px;
+    padding-top: 75px; 
+    padding-bottom: 75px; 
+    flex: 1; 
 }
 
 .call-to-action-column{
     display: flex; 
-    flex-direction: column;  
+    justify-content: center; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    background-color: #3882F6;
+    color: white; 
+    padding-left: 200px; 
+    padding-right: 100px; 
+    padding-top: 50px;
+    padding-bottom: 50px; 
 }
+
+.call-to-action-row-header{
+    font-weight: 700;
+    font-size: 25px; 
+}
+
+.bottom-button{
+    display: flex; 
+    justify-content: flex-start; 
+    height: 146px; 
+    background-color: #3882F6;
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    padding-right: 200px; 
+    
+}
+
+button.bottom-sign-up {
+    background: #3882F6;
+    border: 2px solid white;
+    color: white; 
+    height: 50px; 
+    width: 150px;  
+    align-self: flex-end; 
+    font-weight: 600;
+  }
+
+  .bottom-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #F9faf8; 
+    font-weight: 700;
+    padding-top: 35px;
+    padding-bottom: 35px; 
+  }
+
 
 
 
